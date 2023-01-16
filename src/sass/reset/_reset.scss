@@ -3,3 +3,19 @@
 ::before {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+  font-family: inherit;
+}
