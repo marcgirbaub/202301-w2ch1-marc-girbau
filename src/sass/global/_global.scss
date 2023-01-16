@@ -11,12 +11,15 @@ body {
   width: 100vw;
 }
 
+a:hover {
+}
+
 .nft-card {
   font-size: typography.$primary-font-size;
   font-family: typography.$primary-font;
   font-weight: typography.$lower-font-weight;
   color: colors.$primary-color-soft;
-  height: functions.pixelsToRem(542);
+  height: functions.pixelsToRem(548);
   width: functions.pixelsToRem(330);
   background-color: colors.$card-background-color;
   padding: functions.pixelsToRem(24);
@@ -33,6 +36,13 @@ body {
   &__content {
     width: 100%;
   }
+
+  &__creator {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: functions.pixelsToRem(14);
+  }
 }
 
 .content {
@@ -43,9 +53,56 @@ body {
   &__title {
     color: colors.$white-color;
     font-weight: typography.$medium-font-weight;
-    font-size: functions.pixelsToRem(22);
+    font-size: functions.pixelsToRem(23);
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &__currency {
+    display: flex;
+    gap: functions.pixelsToRem(6);
+    color: colors.$primary-color-accent;
+    font-weight: typography.$higher-font-weight;
+
+    img {
+      height: functions.pixelsToRem(20);
+      width: functions.pixelsToRem(10);
+    }
   }
 
-  &__description {
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: functions.pixelsToRem(6);
+
+    img {
+      height: functions.pixelsToRem(16);
+      width: functions.pixelsToRem(16);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: colors.$line-color;
+    bottom: -14px;
+  }
+}
+
+.creator {
+  img {
+    border: 1px solid colors.$white-color;
+    border-radius: 50%;
+  }
+
+  a {
+    color: colors.$white-color;
   }
 }
