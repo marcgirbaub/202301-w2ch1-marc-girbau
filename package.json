@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "parcel": "^2.8.2",
+    "rimraf": "^4.0.7"
   }
 }
