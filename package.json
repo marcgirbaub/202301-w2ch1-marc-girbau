@@ -13,8 +13,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
     "husky": "^8.0.0",
     "parcel": "^2.8.2",
     "rimraf": "^4.0.7"
+  },
+  "dependencies": {
+    "@fontsource/outfit": "^4.5.10"
   }
 }

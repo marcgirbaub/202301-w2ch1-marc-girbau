@@ -1,0 +1,8 @@
+@use "../variables/colors/colors";
+@use "../variables/typography/typography";
+
+body {
+  background-color: colors.$main-background-color;
+  font-size: typography.$primary-font-size;
+  font-family: typography.$primary-font;
+}
