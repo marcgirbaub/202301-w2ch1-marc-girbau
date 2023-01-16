@@ -43,9 +43,19 @@ body {
   &__title {
     color: colors.$white-color;
     font-weight: typography.$medium-font-weight;
-    font-size: functions.pixelsToRem(22);
+    font-size: functions.pixelsToRem(23);
   }
+}
 
-  &__description {
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__currency {
+    display: flex;
+    gap: functions.pixelsToRem(8);
+    color: colors.$primary-color-accent;
+    font-weight: typography.$higher-font-weight;
   }
 }
