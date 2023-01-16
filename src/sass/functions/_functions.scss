@@ -1,5 +1,3 @@
 @function pixelsToRem($pixels) {
-  $result: math.div($pixels, 16) * 1rem;
-
-  @return $result;
+  @return calc($pixels / 16) * 1rem;
 }
