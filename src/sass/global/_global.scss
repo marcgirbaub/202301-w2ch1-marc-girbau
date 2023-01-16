@@ -1,8 +1,51 @@
 @use "../variables/colors/colors";
 @use "../variables/typography/typography";
+@use "../functions/functions";
 
 body {
   background-color: colors.$main-background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nft-card {
   font-size: typography.$primary-font-size;
   font-family: typography.$primary-font;
+  font-weight: typography.$lower-font-weight;
+  color: colors.$primary-color-soft;
+  height: functions.pixelsToRem(542);
+  width: functions.pixelsToRem(330);
+  background-color: colors.$card-background-color;
+  padding: functions.pixelsToRem(24);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: functions.pixelsToRem(30);
+
+  &__image {
+    border-radius: 0.5rem;
+  }
+
+  &__content {
+    width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: functions.pixelsToRem(20);
+
+  &__title {
+    color: colors.$white-color;
+    font-weight: typography.$medium-font-weight;
+    font-size: functions.pixelsToRem(22);
+  }
+
+  &__description {
+  }
 }

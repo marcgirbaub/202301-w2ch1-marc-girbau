@@ -4,4 +4,8 @@
 @import url(/node_modules/@fontsource/outfit/600.css);
 
 $primary-font-size: functions.pixelsToRem(18);
-$primary-font: "outfit";
+$primary-font: "outfit", sans-serif;
+
+$higher-font-weight: 600;
+$medium-font-weight: 400;
+$lower-font-weight: 300;
